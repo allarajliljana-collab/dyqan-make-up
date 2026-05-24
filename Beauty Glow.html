@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file:///C:/Users/User/Desktop/index.html -->
+<html lang="sq"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Beauty Glow</title>
+
+  <style>
+
+    *{
+
+      margin:0;
+
+      padding:0;
+
+      box-sizing:border-box;
+
+      font-family:Arial, sans-serif;
+
+    }
+
+    body{
+
+      background:#fff5f7;
+
+      color:#333;
+
+    }
+
+    /* HEADER */
+
+    header{
+
+      background:linear-gradient(to right,#ff7aa2,#ff4f87);
+
+      color:white;
+
+      padding:25px;
+
+      text-align:center;
+
+    }
+
+    header h1{
+
+      font-size:45px;
+
+      margin-bottom:10px;
+
+    }
+
+    nav{
+
+      margin-top:15px;
+
+    }
+
+    nav a{
+
+      color:white;
+
+      text-decoration:none;
+
+      margin:0 15px;
+
+      font-size:18px;
+
+      transition:0.3s;
+
+    }
+
+    nav a:hover{
+
+      color:#ffe3ec;
+
+    }
+
+    /* HERO */
+
+    .hero{
+
+      height:400px;
+
+      background:url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9") center/cover;
+
+      display:flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      text-align:center;
+
+      color:white;
+
+    }
+
+    .hero-text{
+
+      background:rgba(0,0,0,0.5);
+
+      padding:30px;
+
+      border-radius:15px;
+
+    }
+
+    .hero-text h2{
+
+      font-size:40px;
+
+      margin-bottom:15px;
+
+    }
+
+    .hero-text p{
+
+      font-size:20px;
+
+      margin-bottom:20px;
+
+    }
+
+    .hero-text button{
+
+      padding:14px 25px;
+
+      border:none;
+
+      background:#ff4f87;
+
+      color:white;
+
+      font-size:18px;
+
+      border-radius:8px;
+
+      cursor:pointer;
+
+      transition:0.3s;
+
+    }
+
+    .hero-text button:hover{
+
+      background:#e63e74;
+
+    }
+
+    /* PRODUCTS */
+
+    .title{
+
+      text-align:center;
+
+      margin-top:50px;
+
+      font-size:35px;
+
+      color:#ff4f87;
+
+    }
+
+    .products{
+
+      display:flex;
+
+      justify-content:center;
+
+      gap:30px;
+
+      padding:50px;
+
+      flex-wrap:wrap;
+
+    }
+
+    .card{
+
+      background:white;
+
+      width:300px;
+
+      border-radius:15px;
+
+      overflow:hidden;
+
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+      transition:0.3s;
+
+    }
+
+    .card:hover{
+
+      transform:translateY(-10px);
+
+    }
+
+    .card img{
+
+      width:100%;
+
+      height:260px;
+
+      object-fit:cover;
+
+    }
+
+    .card-content{
+
+      padding:20px;
+
+      text-align:center;
+
+    }
+
+    .card-content h3{
+
+      color:#ff4f87;
+
+      margin-bottom:10px;
+
+      font-size:24px;
+
+    }
+
+    .price{
+
+      font-size:22px;
+
+      margin:15px 0;
+
+      font-weight:bold;
+
+    }
+
+    .stars{
+
+      color:gold;
+
+      margin-bottom:10px;
+
+      font-size:20px;
+
+    }
+
+    .card button{
+
+      background:#ff4f87;
+
+      color:white;
+
+      border:none;
+
+      padding:12px 20px;
+
+      border-radius:8px;
+
+      cursor:pointer;
+
+      font-size:16px;
+
+      transition:0.3s;
+
+    }
+
+    .card button:hover{
+
+      background:#e63e74;
+
+    }
+
+    /* ABOUT */
+
+    .about{
+
+      background:white;
+
+      margin:40px;
+
+      padding:40px;
+
+      border-radius:15px;
+
+      text-align:center;
+
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    }
+
+    .about h2{
+
+      color:#ff4f87;
+
+      margin-bottom:20px;
+
+      font-size:35px;
+
+    }
+
+    .about p{
+
+      font-size:18px;
+
+      line-height:1.8;
+
+    }
+
+    /* CONTACT */
+
+    .contact{
+
+      padding:50px;
+
+      text-align:center;
+
+    }
+
+    .contact h2{
+
+      color:#ff4f87;
+
+      margin-bottom:20px;
+
+      font-size:35px;
+
+    }
+
+    input, textarea{
+
+      width:80%;
+
+      max-width:500px;
+
+      padding:12px;
+
+      margin:10px 0;
+
+      border:1px solid #ccc;
+
+      border-radius:8px;
+
+      font-size:16px;
+
+    }
+
+    textarea{
+
+      height:120px;
+
+      resize:none;
+
+    }
+
+    .contact button{
+
+      background:#ff4f87;
+
+      color:white;
+
+      border:none;
+
+      padding:12px 25px;
+
+      border-radius:8px;
+
+      cursor:pointer;
+
+      font-size:17px;
+
+    }
+
+    footer{
+
+      background:#ff7aa2;
+
+      color:white;
+
+      text-align:center;
+
+      padding:20px;
+
+      margin-top:30px;
+
+    }
+
+    @media(max-width:768px){
+
+      .hero-text h2{
+
+        font-size:30px;
+
+      }
+
+      .hero-text p{
+
+        font-size:16px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Beauty Glow</h1>
+
+    <p>Dyqani yt i preferuar i mejkapit</p>
+
+    <nav>
+
+      <a href="file:///C:/Users/User/Desktop/index.html#">Kryefaqja</a>
+
+      <a href="file:///C:/Users/User/Desktop/index.html#">Produktet</a>
+
+      <a href="file:///C:/Users/User/Desktop/index.html#">Rreth Nesh</a>
+
+      <a href="file:///C:/Users/User/Desktop/index.html#">Kontakt</a>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h2>Zbulo Bukurinë Tënde</h2>
+
+      <p>Produktet më moderne të makeup-it me cilësi premium</p>
+
+      <button>Shiko Produktet</button>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <h2 class="title">Produktet Kryesore</h2>
+
+  <section class="products">
+
+    <div class="card">
+
+      <img src="./Beauty Glow_files/photo-1522335789203-aabd1fc54bc9">
+
+      <div class="card-content">
+
+        <h3>Kuqalashe Matte</h3>
+
+        <div class="stars">★★★★★</div>
+
+        <p>Ngjyrë elegante dhe shumë rezistente.</p>
+
+        <div class="price">1200 Lekë</div>
+
+        <button>Bli Tani</button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="./Beauty Glow_files/photo-1512496015851-a90fb38ba796">
+
+      <div class="card-content">
+
+        <h3>Fondatinë Glow</h3>
+
+        <div class="stars">★★★★★</div>
+
+        <p>Mbulim perfekt dhe pamje natyrale.</p>
+
+        <div class="price">2500 Lekë</div>
+
+        <button>Bli Tani</button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="./Beauty Glow_files/photo-1596462502278-27bfdc403348">
+
+      <div class="card-content">
+
+        <h3>Paletë Sysh</h3>
+
+        <div class="stars">★★★★☆</div>
+
+        <p>Ngjyra moderne për çdo stil grimi.</p>
+
+        <div class="price">3000 Lekë</div>
+
+        <button>Bli Tani</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about">
+
+    <h2>Rreth Nesh</h2>
+
+    <p>
+
+      Beauty Glow ofron produkte makeup-i me cilësi të lartë për çdo vajzë
+
+      që dëshiron të ndihet elegante dhe e bukur çdo ditë.
+
+      Produktet tona janë moderne, të sigurta dhe shumë të preferuara.
+
+    </p>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section class="contact">
+
+    <h2>Na Kontakto</h2>
+
+    <input type="text" placeholder="Emri juaj">
+
+    <br>
+
+    <input type="email" placeholder="Email-i juaj">
+
+    <br>
+
+    <textarea placeholder="Shkruaj mesazhin..."></textarea>
+
+    <br>
+
+    <button>Dërgo</button>
+
+  </section>
+
+  <footer>
+
+    © 2026 Beauty Glow | Të gjitha të drejtat e rezervuara
+
+  </footer>
+
+
+
+</body></html>
